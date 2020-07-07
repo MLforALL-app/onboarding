@@ -1,23 +1,15 @@
 import React from "react";
-import logo from "../logo.svg";
+import logo from "../pictures/Square logo.jpg";
+import len from "../pictures/len.jpg";
 import "../App.css";
 
 function Welcome() {
 	return (
 		<div className="App">
-			<header className="App-header">
-				<img src={logo} className="App-logo" alt="logo" />
-				<p>
-					Edit <code>src/App.js</code> and save to reload.
-				</p>
-				<a
-					className="App-link"
-					href="https://reactjs.org"
-					target="_blank"
-					rel="noopener noreferrer">
-					Learn React
-				</a>
-			</header>
+			<img src={logo} alt="logo" />
+			<h1> Welcome to MLforALL React Redux Firebase Onboarding! </h1>
+			<img src={len} alt="len" style={{ height: "10rem" }} />
+			<h2> Made by Len Huang </h2>
 		</div>
 	);
 }
