@@ -9,6 +9,8 @@ import Rating from "./components/rating";
 import Navbar from "./components/navbar";
 import "./App.css";
 
+/* This set up allows us to redirect different paths to
+ * different components all while maintaining the navBar on top */
 function App() {
 	return (
 		<BrowserRouter>
