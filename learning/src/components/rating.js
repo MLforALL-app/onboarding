@@ -8,7 +8,7 @@ import { compose } from "redux";
 
 const Rating = (props) => {
 	console.log("props", props);
-	return <div> lmaoxdrating </div>;
+	return <div> lmaoxdrating (wip) </div>;
 };
 
 const mapStateToProps = (state) => {

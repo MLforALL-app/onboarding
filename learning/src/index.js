@@ -37,6 +37,7 @@ const firebaseConfig = {
 
 firebase.initializeApp(firebaseConfig);
 firebase.firestore();
+firebase.storage();
 
 // https://www.youtube.com/watch?v=gf5bVfVlNUM&list=PL4cUxeGkcC9iWstfXntcj8f-dFZ4UtlN3&index=17
 
@@ -44,7 +45,7 @@ const store = createStore(
 	rootReducer,
 	compose(
 		applyMiddleware(thunk.withExtraArgument({ getFirestore, getFirebase })),
-		reduxFirestore(firebaseConfig)
+		reduxFirestore(firebase, firebaseConfig)
 	)
 );
 
