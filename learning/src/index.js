@@ -41,6 +41,7 @@ firebase.storage();
 
 // https://www.youtube.com/watch?v=gf5bVfVlNUM&list=PL4cUxeGkcC9iWstfXntcj8f-dFZ4UtlN3&index=17
 
+// This initializes the store
 const store = createStore(
 	rootReducer,
 	compose(
@@ -49,6 +50,7 @@ const store = createStore(
 	)
 );
 
+// These are props we provide our React Redux Firebase Provider
 const rrfProps = {
 	firebase,
 	config: firebaseConfig,
